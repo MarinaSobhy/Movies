@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="d-flex">
+    <div class="menu">
+      <ul class="list-unstyled p-4 text-white overflow-hidden">
+        <li id="now-playing">Now Playing</li>
+        <li id="popular">Popular</li>
+        <li id="top-rated">Top Rated</li>
+        <li id="trending">Trending</li>
+        <li id="upcoming">Upcoming</li>
+      </ul>
+    </div>
+    <div class="d-flex flex-column justify-content-center controlls ">
+      <span id="close"><i class="fas fa-bars"></i></span>
+    </div>
+  </nav>
+
+  <div class="container mt-5 mb-2">
+    <div class="row">
+      <div class="col-md-6 px-4 ">
+        <input type="text" name="" id="search" class="form-control mb-2" placeholder="search by name...">
+      </div>
+      <div class="col-md-6 px-4">
+        <input type="text" name="" id="searchPage" class="form-control" placeholder="search by name in page...">
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container p-4">
+      <div class="row" id="movies">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container myM w-75 mx-auto my-5 ">
+    <h2 class="text-light my-5">ContacUs...</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="name" placeholder="Enter Your Name">
+          <span class="error-msg text-danger" id="namealert"> Your Name is not valid</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="email" placeholder="Enter Email">
+          <span class="error-msg text-danger" id="emailalert">entre valid email</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="phone" placeholder="Enter phone">
+          <span class="error-msg text-danger" id="phonealert">entre valid phone</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" id="age" placeholder="Enter Age">
+          <span class="error-msg text-danger" id="agealert">entre valid Age</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" type="password" id="password" placeholder="Enter Password">
+          <span class="error-msg text-danger" id="passwordalert">
+            entre valid password *Minimum eight characters, at least one letter and one number:*
+          </span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+          <span class="error-msg text-danger" id="repasswordalert">
+            Password does not match
+          </span>
+        </div>
+      </div>
+
+
+    </div>
+
+    <button type="submit" id="submitBtn" class="btn btn-outline-danger mt-2">Submit</button>
+    <p class=""></p>
+  </section>
+
+
+  <script src="https://kit.fontawesome.com/92429648e0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

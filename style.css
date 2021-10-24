@@ -1,0 +1,75 @@
+body{
+    background-color: #000000f2;
+}
+nav{
+    position: fixed;
+    left: -250px;
+    top:0 ;
+    bottom: 0;
+    z-index: 5;
+    background-color: #000000f2 ;
+    transition: all 0.6s ease;
+}
+.menu{
+    width: 250px;
+}
+.menu ul{
+    height: 300px;
+}
+
+.menu li{
+    cursor: pointer;
+    padding-top: 300px;
+    transition: color 0.4s;
+}
+.controlls{
+    padding: 10px;
+    background-color: #f8f6f6;
+    cursor: pointer;
+}
+
+.form-control {
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff !important;
+    padding: 5px 3px;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+.movie{
+    position: relative
+}
+.description{
+    position: absolute;
+    height: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.7);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 1s;
+}
+.movie{
+    border-radius: 5px;
+}
+.description p,h3{
+    margin: 10px;
+} 
+.movie:hover .description{
+    height: 100%;
+}
+.form-group{
+   margin: 10px 0px;
+}
+.error-msg{
+    font-size: 16px;
+    margin-top: 5px;
+    display: none;
+}
